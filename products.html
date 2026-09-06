@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collections | Shahkar Furniture</title>
+  <meta name="description" content="Browse the Shahkar Furniture collection — beds, sofas, dining sets, wardrobes and more, crafted in a classic, timeless style.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============================= NAVBAR ============================= -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">SHAHKAR <span>FURNITURE</span></a>
+
+      <nav aria-label="Primary">
+        <ul class="navbar__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" class="is-active">Collections</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="#" data-contact="call" class="btn btn-outline btn-sm">Call Now</a>
+        <a href="#" data-contact="whatsapp" class="btn btn-gold btn-sm">WhatsApp</a>
+        <button class="navbar__toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="navbar__mobile-panel container">
+      <a href="index.html">Home</a>
+      <a href="products.html">Collections</a>
+      <a href="#">About Us</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- ============================ PAGE HERO ============================ -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">Our Collections</span>
+      <h1>Our Collections</h1>
+      <p>Explore furniture designed to bring timeless elegance to your space.</p>
+    </div>
+  </section>
+
+  <!-- ============================ FILTER BAR ============================ -->
+  <div class="container">
+    <div class="filter-bar" role="group" aria-label="Filter by category">
+      <button class="filter-btn is-active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="bedroom">Bedroom</button>
+      <button class="filter-btn" data-filter="living-room">Living Room</button>
+      <button class="filter-btn" data-filter="dining">Dining</button>
+      <button class="filter-btn" data-filter="office">Office</button>
+      <button class="filter-btn" data-filter="other">Other</button>
+    </div>
+
+    <p class="placeholder-note">
+      Products shown below are placeholders. Final catalog, pricing and photography
+      will replace these once provided by the client.
+    </p>
+
+    <!-- ============================ PRODUCT GRID =========================== -->
+    <div class="products-grid">
+
+      <article class="product-card" data-category="bedroom">
+        <div class="product-card__media">
+          <div class="img-placeholder" data-label="Royal King Bed"></div>
+        </div>
+        <div class="product-card__body">
+          <span class="product-card__category">Royal Collection</span>
+          <h3 class="product-card__name">Royal King Bed</h3>
+          <p class="product-card__desc">A beautifully crafted classic bed designed for an elegant master bedroom.</p>
+          <span class="product-card__price">Rs. 85,000</span>
+          <div class="product-card__actions">
+            <a href="#" class="btn btn-outline btn-sm">View Details</a>
+            <a href="#" data-contact="whatsapp" data-product="Royal King Bed" class="btn btn-gold btn-sm">WhatsApp</a>
+            <a href="#" data-contact="call" class="btn btn-outline btn-sm">Call</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="bedroom">
+        <div class="product-card__media">
+          <div class="img-placeholder" data-label="Royal Dressing Table"></div>
+        </div>
+        <div class="product-card__body">
+          <span class="product-card__category">Royal Collection</span>
+          <h3 class="product-card__name">Royal Dressing Table</h3>
+          <p class="product-card__desc">An ornate dressing table with a beveled mirror and gold-toned hardware.</p>
+          <span class="product-card__price">Rs. 42,000</span>
+          <div class="product-card__actions">
+            <a href="#" class="btn btn-outline btn-sm">View Details</a>
+            <a href="#" data-contact="whatsapp" data-product="Royal Dressing Table" class="btn btn-gold btn-sm">WhatsApp</a>
+            <a href="#" data-contact="call" class="btn btn-outline btn-sm">Call</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="bedroom">
+        <div class="product-card__media">
+          <div class="img-placeholder" data-label="Luxury Wardrobe"></div>
+        </div>
+        <div class="product-card__body">
+          <span class="product-card__category">Royal Collection</span>
+          <h3 class="product-card__name">Luxury Wardrobe</h3>
+          <p class="product-card__desc">A spacious carved wardrobe designed to match a royal bedroom set.</p>
+          <span class="product-card__price">Rs. 95,000</span>
+          <div class="product-card__actions">
+            <a href="#" class="btn btn-outline btn-sm">View Details</a>
+            <a href="#" data-contact="whatsapp" data-product="Luxury Wardrobe" class="btn btn-gold btn-sm">WhatsApp</a>
+            <a href="#" data-contact="call" class="btn btn-outline btn-sm">Call</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="living-room">
+        <div class="product-card__media">
+          <div class="img-placeholder" data-label="Luxury Chesterfield Sofa"></div>
+        </div>
+        <div class="product-card__body">
+          <span class="product-card__category">Living Room</span>
+          <h3 class="product-card__name">Luxury Chesterfield Sofa</h3>
+          <p class="product-card__desc">Deep-buttoned upholstery over a solid hardwood frame.</p>
+          <span class="product-card__price">Rs. 120,000</span>
+          <div class="product-card__actions">
+            <a href="#" class="btn btn-outline btn-sm">View Details</a>
+            <a href="#" data-contact="whatsapp" data-product="Luxury Chesterfield Sofa" class="btn btn-gold btn-sm">WhatsApp</a>
+            <a href="#" data-contact="call" class="btn btn-outline btn-sm">Call</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="living-room">
+        <div class="product-card__media">
+          <div class="img-placeholder" data-label="Classic Coffee Table"></div>
+        </div>
+        <div class="product-card__body">
+          <span class="product-card__category">Living Room</span>
+          <h3 class="product-card__name">Classic Coffee Table</h3>
+          <p class="product-card__desc">Carved wooden coffee table with a warm walnut finish.</p>
+          <span class="product-card__price">Rs. 28,000</span>
+          <div class="product-card__actions">
+            <a href="#" class="btn btn-outline btn-sm">View Details</a>
+            <a href="#" data-contact="whatsapp" data-product="Classic Coffee Table" class="btn btn-gold btn-sm">WhatsApp</a>
+            <a href="#" data-contact="call" class="btn btn-outline btn-sm">Call</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="dining">
+        <div class="product-card__media">
+          <div class="img-placeholder" data-label="Classic Dining Set"></div>
+        </div>
+        <div class="product-card__body">
+          <span class="product-card__category">Dining</span>
+          <h3 class="product-card__name">Classic Dining Set</h3>
+          <p class="product-card__desc">A six-seat dining table paired with upholstered chairs.</p>
+          <span class="product-card__price">Rs. 150,000</span>
+          <div class="product-card__actions">
+            <a href="#" class="btn btn-outline btn-sm">View Details</a>
+            <a href="#" data-contact="whatsapp" data-product="Classic Dining Set" class="btn btn-gold btn-sm">WhatsApp</a>
+            <a href="#" data-contact="call" class="btn btn-outline btn-sm">Call</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="office">
+        <div class="product-card__media">
+          <div class="img-placeholder" data-label="Executive Office Desk"></div>
+        </div>
+        <div class="product-card__body">
+          <span class="product-card__category">Office</span>
+          <h3 class="product-card__name">Executive Office Desk</h3>
+          <p class="product-card__desc">A solid wood desk with classic detailing, built for a home office or study.</p>
+          <span class="product-card__price">Rs. 65,000</span>
+          <div class="product-card__actions">
+            <a href="#" class="btn btn-outline btn-sm">View Details</a>
+            <a href="#" data-contact="whatsapp" data-product="Executive Office Desk" class="btn btn-gold btn-sm">WhatsApp</a>
+            <a href="#" data-contact="call" class="btn btn-outline btn-sm">Call</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="other">
+        <div class="product-card__media">
+          <div class="img-placeholder" data-label="Carved Side Table"></div>
+        </div>
+        <div class="product-card__body">
+          <span class="product-card__category">Accents</span>
+          <h3 class="product-card__name">Carved Side Table</h3>
+          <p class="product-card__desc">A small accent table with hand-carved legs, finished to match larger pieces.</p>
+          <span class="product-card__price">Rs. 18,000</span>
+          <div class="product-card__actions">
+            <a href="#" class="btn btn-outline btn-sm">View Details</a>
+            <a href="#" data-contact="whatsapp" data-product="Carved Side Table" class="btn btn-gold btn-sm">WhatsApp</a>
+            <a href="#" data-contact="call" class="btn btn-outline btn-sm">Call</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="empty-state">No products found in this category yet. More pieces are being added soon — call or WhatsApp us for the full catalog.</p>
+  </div>
+
+  <!-- ============================ CONTACT CTA =========================== -->
+  <section class="cta-panel" style="margin-top: var(--space-xl);">
+    <h2>Can't find what you're looking for?</h2>
+    <p>Our full catalog is larger than what's shown here — get in touch and we'll help you find the right piece.</p>
+    <div class="cta-panel__actions">
+      <a href="#" data-contact="call" class="btn btn-gold">Call Now</a>
+      <a href="#" data-contact="whatsapp" class="btn btn-outline">WhatsApp Us</a>
+    </div>
+  </section>
+
+  <!-- ============================== FOOTER =============================== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <div class="navbar__logo">SHAHKAR <span>FURNITURE</span></div>
+        <p>Classic, handcrafted furniture for elegant, timeless interiors.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Collections</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__contact">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#" data-contact="call">Call Us</a></li>
+          <li><a href="#" data-contact="whatsapp">WhatsApp</a></li>
+          <li>Showroom Address, City, Pakistan</li>
+          <li>Mon – Sat: 11:00 AM – 9:00 PM</li>
+        </ul>
+      </div>
+
+      <div class="footer__map">
+        <h4>Visit Us</h4>
+        <ul>
+          <li><a href="https://maps.google.com" target="_blank" rel="noopener">Find us on Google Maps →</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      &copy; 2026 Shahkar Furniture. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- ===================== MOBILE STICKY CONTACT BAR ==================== -->
+  <div class="mobile-contact-bar">
+    <div class="mobile-contact-bar__inner container" style="padding:0;">
+      <a href="#" data-contact="call">Call</a>
+      <a href="#" data-contact="whatsapp">WhatsApp</a>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
