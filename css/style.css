@@ -81,7 +81,7 @@ body {
   overflow-x: hidden;
 }
 
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 
 a {
   color: inherit;
@@ -425,6 +425,15 @@ section { padding: var(--space-xl) 0; }
   border: none;
 }
 
+.hero__media > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 /* 8. Introduction ---------------------------------------------------------- */
 .intro {
   display: grid;
@@ -433,8 +442,16 @@ section { padding: var(--space-xl) 0; }
   align-items: center;
 }
 
+.intro-wrap { display: grid; }
+
 .intro__media .img-placeholder {
   aspect-ratio: 4 / 5;
+}
+
+.intro__image img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
 }
 
 .intro__body p + p { margin-top: var(--space-sm); }
@@ -460,9 +477,14 @@ section { padding: var(--space-xl) 0; }
   align-items: flex-end;
 }
 
+.collection-card > img,
 .collection-card .img-placeholder {
   position: absolute;
   inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   border: none;
 }
 
@@ -530,6 +552,7 @@ section { padding: var(--space-xl) 0; }
   background: var(--color-white);
   border: var(--border-hairline);
   flex: 0 0 320px;
+  min-width: 0;
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;
@@ -549,6 +572,13 @@ section { padding: var(--space-xl) 0; }
   border: none;
   border-bottom: var(--border-hairline);
   transition: transform 0.6s var(--ease-showroom);
+}
+
+.product-card__media > img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-bottom: var(--border-hairline);
 }
 
 .product-card:hover .product-card__media .img-placeholder {
@@ -594,6 +624,8 @@ section { padding: var(--space-xl) 0; }
   gap: 0.6rem;
   flex-wrap: wrap;
 }
+
+.product-card__actions .btn { min-width: 0; }
 
 .placeholder-note {
   display: inline-flex;
@@ -864,7 +896,8 @@ section { padding: var(--space-xl) 0; }
     aspect-ratio: 5 / 4;
   }
 
-  .intro { grid-template-columns: 1fr; }
+  .intro,
+  .intro-wrap { grid-template-columns: 1fr; }
   .intro__media { order: -1; }
 
   .collections-grid { grid-template-columns: 1fr; }
@@ -889,6 +922,8 @@ section { padding: var(--space-xl) 0; }
   h2 { font-size: clamp(1.65rem, 6vw, 2rem); }
 
   .container { padding: 0 1.1rem; }
+
+  .intro-wrap { gap: var(--space-md); }
 
   /* ---- Navbar ---- */
   .navbar__inner { padding-top: 0.85rem; padding-bottom: 0.85rem; }

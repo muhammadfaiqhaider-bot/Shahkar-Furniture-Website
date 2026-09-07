@@ -66,6 +66,7 @@ function initNavbar() {
   toggle.addEventListener("click", () => {
     const isOpen = navbar.classList.toggle("is-open");
     toggle.setAttribute("aria-expanded", String(isOpen));
+    toggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
   });
 
   // Close mobile menu when a link inside it is tapped
@@ -73,6 +74,7 @@ function initNavbar() {
     link.addEventListener("click", () => {
       navbar.classList.remove("is-open");
       toggle.setAttribute("aria-expanded", "false");
+      toggle.setAttribute("aria-label", "Open menu");
     });
   });
 }
