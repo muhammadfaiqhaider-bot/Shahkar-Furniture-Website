@@ -436,22 +436,32 @@ section { padding: var(--space-xl) 0; }
 
 /* 8. Introduction ---------------------------------------------------------- */
 .intro {
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xl);
+}
+
+.intro-wrap {
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;
-  gap: var(--space-lg);
+  gap: clamp(1.5rem, 3vw, 3rem);
   align-items: center;
 }
 
-.intro-wrap { display: grid; }
-
-.intro__media .img-placeholder {
-  aspect-ratio: 4 / 5;
+.intro__image {
+  min-width: 0;
 }
 
 .intro__image img {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
+  display: block;
+}
+
+.intro__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .intro__body p + p { margin-top: var(--space-sm); }
@@ -953,7 +963,7 @@ section { padding: var(--space-xl) 0; }
   .products-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 767px) {
   .navbar__links { display: none; }
   .navbar__actions .btn { display: none; }
   .navbar__toggle { display: flex; }
