@@ -80,9 +80,81 @@ function initNavbar() {
 }
 
 /* ------------------------------------------------------------------------
-   4. PRODUCT FILTERING (products.html)
-   Cards are filtered by their data-category attribute.
+   4. PRODUCT CATALOG / FILTERING (products.html)
+   Renders every available photo in the bedroom / living room / dining folders,
+   then filters by category without hardcoding dozens of product entries.
    ------------------------------------------------------------------------ */
+const PRODUCT_CATALOG = [
+  ...Array.from({ length: 14 }, (_, index) => ({
+    category: "bedroom",
+    image: `images/categories/bed/bed_${index + 1}.jpeg`,
+    name: `Bedroom Piece ${index + 1}`,
+    description: "Crafted bedroom furniture designed to bring warmth, elegance and comfort to a refined home."
+  })),
+  ...Array.from({ length: 30 }, (_, index) => ({
+    category: "living-room",
+    image: `images/categories/coffee_table/tab_${index + 1}.jpeg`,
+    name: `Coffee Table ${index + 1}`,
+    description: "A statement coffee table piece that completes a polished and welcoming living room."
+  })),
+  ...Array.from({ length: 1 }, () => ({
+    category: "dining",
+    image: "images/categories/dining/dini_1.jpeg",
+    name: "Dining Table",
+    description: "An elegant dining table for modern family gatherings and formal hosting."
+  })),
+  ...Array.from({ length: 1 }, () => ({
+    category: "bedroom",
+    image: "images/categories/dressing_table/dressi_1.jpeg",
+    name: "Dressing Table",
+    description: "A bedroom dressing table designed with elegance, storage and balanced detailing."
+  })),
+  ...Array.from({ length: 1 }, () => ({
+    category: "living-room",
+    image: "images/categories/side_table/tab_1.jpeg",
+    name: "Side Table",
+    description: "An accent side table designed to complement the living room with both style and utility."
+  })),
+  ...Array.from({ length: 23 }, (_, index) => ({
+    category: "living-room",
+    image: `images/categories/sofa/sofa_${index + 1}.jpeg`,
+    name: `Sofa ${index + 1}`,
+    description: "Comfort-first sofa design that delivers premium lounging and a timeless look."
+  })),
+  ...Array.from({ length: 2 }, (_, index) => ({
+    category: "dining",
+    image: `images/categories/takht_table/tab_${index + 1}.jpeg`,
+    name: `Takht Table ${index + 1}`,
+    description: "Traditional seating furniture with a warm handcrafted character for dining and gathering spaces."
+  }))
+];
+
+function renderProductCards() {
+  const grid = document.querySelector("#product-grid");
+  if (!grid) return;
+
+  grid.innerHTML = PRODUCT_CATALOG.map((product) => `
+    <article class="product-card" data-category="${product.category}">
+      <div class="product-card__media">
+        <img src="${product.image}" alt="${product.name}">
+      </div>
+      <div class="product-card__body">
+        <span class="product-card__category">${product.category === "living-room" ? "Living Room" : product.category === "bedroom" ? "Bedroom" : "Dining"}</span>
+        <h3 class="product-card__name">${product.name}</h3>
+        <p class="product-card__desc">${product.description}</p>
+        <span class="product-card__price">Contact for Price</span>
+        <div class="product-card__actions">
+          <a href="#" class="btn btn-outline btn-sm">View Details</a>
+          <a href="#" data-contact="whatsapp" data-product="${product.name}" class="btn btn-gold btn-sm">WhatsApp</a>
+          <a href="#" data-contact="call" class="btn btn-outline btn-sm">Call</a>
+        </div>
+      </div>
+    </article>
+  `).join("");
+
+  initProductFilter();
+}
+
 function initProductFilter() {
   const filterBar = document.querySelector(".filter-bar");
   if (!filterBar) return;
@@ -118,5 +190,5 @@ function initProductFilter() {
 document.addEventListener("DOMContentLoaded", () => {
   initContactLinks();
   initNavbar();
-  initProductFilter();
+  renderProductCards();
 });
