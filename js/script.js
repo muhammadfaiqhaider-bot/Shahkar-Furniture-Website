@@ -498,7 +498,6 @@ function renderProductCards() {
         <p class="product-card__desc">${product.description}</p>
         <span class="product-card__price">Contact for Price</span>
         <div class="product-card__actions">
-          <a href="#" class="btn btn-outline btn-sm">View Details</a>
           <a href="#" data-contact="whatsapp" data-product="${product.name}" class="btn btn-gold btn-sm">WhatsApp</a>
           <a href="#" data-contact="call" class="btn btn-outline btn-sm">Call</a>
         </div>
