@@ -796,6 +796,13 @@ section { padding: var(--space-xl) 0; }
   padding-top: 3.7rem;
 }
 
+@media (min-width: 768px) {
+  .footer__contact,
+  .footer__map {
+    transform: translateY(1px);
+  }
+}
+
 .footer h4 {
   font-family: var(--font-body);
   font-size: 0.8rem;
@@ -1424,20 +1431,57 @@ section { padding: var(--space-xl) 0; }
 
   .footer__grid {
     grid-template-columns: 1fr;
-    justify-items: start;
+    justify-items: center;
+    align-items: center;
     column-gap: 0;
     row-gap: 1.5rem;
+    text-align: center;
   }
 
   .footer__intro,
   .footer__contact,
   .footer__map {
     width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__brand,
+  .footer__contact,
+  .footer__map {
+    width: 100%;
+    align-items: center;
+  }
+
+  .footer__brand .navbar__logo,
+  .footer__brand p,
+  .footer__contact ul,
+  .footer__map ul {
+    width: 100%;
+  }
+
+  .footer__brand .navbar__logo {
+    display: block;
+    text-align: center;
+  }
+
+  .footer__brand p {
+    max-width: 100%;
+  }
+
+  .footer__contact ul,
+  .footer__map ul {
+    align-items: center;
   }
 
   .footer__contact,
   .footer__map {
     padding-top: 0;
+  }
+
+  .footer__social {
+    justify-content: center;
   }
 
   /* ---- Contact CTA panel ---- */
