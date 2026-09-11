@@ -16,7 +16,7 @@ const SITE_CONFIG = {
   mapsUrl: "https://maps.google.com", // placeholder — replace with real Google Maps link
   openingHours: "Mon – Sat: 11:00 AM – 9:00 PM",
   social: {
-    instagram: "https://instagram.com/",
+    instagram: "https://www.instagram.com/shahkar.furnitures/",
     facebook: "https://facebook.com/"
   }
 };
