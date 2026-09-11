@@ -85,24 +85,240 @@ function initNavbar() {
    then filters by category without hardcoding dozens of product entries.
    ------------------------------------------------------------------------ */
 const PRODUCT_CATALOG = [
-  ...Array.from({ length: 14 }, (_, index) => ({
+  {
     category: "bedroom",
-    image: `images/categories/bed/bed_${index + 1}.jpeg`,
-    name: `Bedroom Piece ${index + 1}`,
-    description: "Crafted bedroom furniture designed to bring warmth, elegance and comfort to a refined home."
-  })),
-  ...Array.from({ length: 30 }, (_, index) => ({
+    image: "images/categories/bed/bed_1.jpeg",
+    name: "Royal Victoria High Back Tufted Bed",
+    description: "A regal high-back tufted bed with a luxurious silhouette and elegant statement appeal."
+  },
+  {
+    category: "bedroom",
+    image: "images/categories/bed/bed_2.jpeg",
+    name: "French Vintage White Rattan Carved Bed",
+    description: "A charming vintage-inspired bed with carved detailing and airy rattan elegance."
+  },
+  {
+    category: "bedroom",
+    image: "images/categories/bed/bed_3.jpeg",
+    name: "Modern Channel Tufted Platform Bed",
+    description: "Sleek and contemporary with a channel tufted finish for a modern, refined bedroom."
+  },
+  {
+    category: "bedroom",
+    image: "images/categories/bed/bed_4.jpeg",
+    name: "Royal High Back Tufted Gold Carved Bed",
+    description: "An ornate gold-carved bed that brings royal warmth, style and grandeur to the room."
+  },
+  {
+    category: "bedroom",
+    image: "images/categories/bed/bed_5.jpeg",
+    name: "Royal Beige Velvet Gold Carved Bed",
+    description: "Soft beige velvet upholstery paired with gold carved accents for a luxurious look."
+  },
+  {
+    category: "bedroom",
+    image: "images/categories/bed/bed_6.jpeg",
+    name: "Modern Grey Tufted Wooden Frame Bed",
+    description: "A contemporary grey tufted bed with a warm wooden frame for balanced comfort and style."
+  },
+  {
+    category: "bedroom",
+    image: "images/categories/bed/bed_7.jpeg",
+    name: "Royal Light Grey Tufted Silver Carved Bed",
+    description: "Light grey upholstery and silver detailing create a polished, elegant bedroom focal point."
+  },
+  {
+    category: "bedroom",
+    image: "images/categories/bed/bed_8.jpeg",
+    name: "Royal Cream Tufted Gold Crown Bed with Side Tables",
+    description: "A luxurious cream tufted bed crowned with gold details and coordinated side tables."
+  },
+  {
+    category: "bedroom",
+    image: "images/categories/bed/bed_9.jpeg",
+    name: "Royal Beige Tufted Silver Carved Bed",
+    description: "Elegant beige upholstery paired with silver carved detailing for a timeless bedroom look."
+  },
+  {
+    category: "bedroom",
+    image: "images/categories/bed/bed_10.jpeg",
+    name: "Royal Dark Walnut Storage Bed",
+    description: "Dark walnut craftsmanship meets practical storage, delivering both richness and function."
+  },
+  {
+    category: "bedroom",
+    image: "images/categories/bed/bed_11.jpeg",
+    name: "Royal Cream Tufted Bed with Bench",
+    description: "A soft cream tufted statement bed enhanced with bench seating for added elegance."
+  },
+  {
+    category: "bedroom",
+    image: "images/categories/bed/bed_12.jpeg",
+    name: "Royal Silver Carved Floral Bed",
+    description: "Intricate floral carving and silver finish give this bed a graceful, heirloom appeal."
+  },
+  {
+    category: "bedroom",
+    image: "images/categories/bed/bed_13.jpeg",
+    name: "French Vintage White Rattan Carved Bed",
+    description: "A slightly softer vintage silhouette with handcrafted carving and white rattan charm."
+  },
+  {
+    category: "bedroom",
+    image: "images/categories/bed/bed_14.jpeg",
+    name: "Modern Channel Tufted Platform Bed",
+    description: "Subtle sophistication and clean lines define this elegant platform bed for contemporary spaces."
+  },
+  {
     category: "living-room",
-    image: `images/categories/coffee_table/tab_${index + 1}.jpeg`,
-    name: `Coffee Table ${index + 1}`,
-    description: "A statement coffee table piece that completes a polished and welcoming living room."
-  })),
-  ...Array.from({ length: 1 }, () => ({
+    image: "images/categories/coffee_table/tab_1.jpeg",
+    name: "Scandinavian white & wood coffee table",
+    description: "A clean, welcoming centerpiece that blends bright wood tones with Scandinavian simplicity."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/coffee_table/tab_2.jpeg",
+    name: "Glass Top Driftwood Coffee table",
+    description: "A textured driftwood-inspired design paired with glass for a refined, airy look."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/coffee_table/tab_3.jpeg",
+    name: "Designer Gloss White X-Base Coffee Table",
+    description: "A bold geometric base and glossy finish bring contemporary elegance to the living room."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/coffee_table/tab_4.jpeg",
+    name: "Rustic Storage Coffee Table",
+    description: "A practical rustic wonder with storage and warm character for everyday living."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/coffee_table/tab_5.jpeg",
+    name: "Rustic Square Stroage Coffee Table",
+    description: "A square rustic storage table designed for both utility and balanced modern styling."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/coffee_table/tab_6.jpeg",
+    name: "Versace Tufted Ottoman Coffee table",
+    description: "Soft tufted comfort and luxe detailing give this coffee table a designer focal point feel."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/coffee_table/tab_7.jpeg",
+    name: "Designer 2-tier Oak Coffee Table",
+    description: "A functional two-tier design that adds warmth, storage and layered visual interest."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/coffee_table/tab_8.jpeg",
+    name: "Designer S-Shape Layered Coffee Table",
+    description: "An artistic layered silhouette that makes a distinctive statement in modern interiors."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/coffee_table/tab_9.jpeg",
+    name: "Modern Oak Storage Coffee Table",
+    description: "A modern oak storage table crafted for understated elegance and everyday convenience."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/coffee_table/tab_10.jpeg",
+    name: "Modern Wallnut & White Storage Coffee table",
+    description: "A rich walnut-and-white combination that feels both contemporary and timeless."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/coffee_table/tab_11.jpeg",
+    name: "Modern Lift- Top Coffee Table",
+    description: "A practical lift-top coffee table that pairs convenience with a sleek, modern profile."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/coffee_table/tab_12.jpeg",
+    name: "Modern Open Cube Storage Coffee Table",
+    description: "Clean open shelving and compact storage make this table ideal for contemporary living spaces."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/coffee_table/tab_13.jpeg",
+    name: "Royal Italian Gold Leg Coffee Table",
+    description: "Italian-inspired elegance and gold accents create a refined centerpiece for luxury lounges."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/coffee_table/tab_14.jpeg",
+    name: "Royal Silver Leg squared coffee table",
+    description: "A square profile with silver legs offers a polished and statement-making coffee table look."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/coffee_table/tab_15.jpeg",
+    name: "shabby chic Floral Oval coffee table",
+    description: "A floral-inspired oval table that brings softness, charm and vintage character to the room."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/coffee_table/tab_16.jpeg",
+    name: "Modern high gloss white block coffee table",
+    description: "A high-gloss white block design that brings polish and minimalism to modern interiors."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/coffee_table/tab_17.jpeg",
+    name: "classic royal 2-Drawer center table",
+    description: "A royal-inspired center table with drawers that adds both style and hidden storage."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/coffee_table/tab_18.jpeg",
+    name: "Simple modern glass top storage coffee table",
+    description: "An elegant glass-top table designed for clean lines, storage and everyday practicality."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/coffee_table/tab_19.jpeg",
+    name: "Modern 3-Tier Floating block coffee table",
+    description: "A floating three-tier form that balances sculptural design with useful layered storage."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/coffee_table/tab_20.jpeg",
+    name: "Classic Pillar Leg 2-Drawer Coffee table",
+    description: "Traditional pillar legs meet practical drawer storage in this timeless coffee table."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/coffee_table/tab_21.jpeg",
+    name: "Modern Open Cube Wenge Coffee table",
+    description: "Warm wenge tones and open cube styling create a contemporary café-inspired centerpiece."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/coffee_table/tab_22.jpeg",
+    name: "Royal white Trunk Storage Coffee table",
+    description: "A trunk-inspired table with storage and a refined, vintage-luxe character."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/coffee_table/tab_23.jpeg",
+    name: "Modern Grey & Wood Storage coffee table",
+    description: "A warm wood-and-grey fusion combining neutral style with practical storage."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/coffee_table/tab_25.jpeg",
+    name: "Modern lift-Top Coffee table with Storage",
+    description: "A versatile lift-top table with added storage for modern everyday convenience."
+  },
+  {
     category: "dining",
     image: "images/categories/dining/dini_1.jpeg",
     name: "Dining Table",
     description: "An elegant dining table for modern family gatherings and formal hosting."
-  })),
+  },
   ...Array.from({ length: 1 }, () => ({
     category: "bedroom",
     image: "images/categories/dressing_table/dressi_1.jpeg",
