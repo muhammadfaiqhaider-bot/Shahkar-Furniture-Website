@@ -12,12 +12,11 @@ const SITE_CONFIG = {
   businessName: "Shahkar Furniture",
   phoneNumber: "+923149177112",       // used for tel: links — keep the + and country code
   whatsappNumber: "923149177112",     // used for wa.me links — digits only, no + or spaces
-  address: "Showroom Address, City, Pakistan", // placeholder — update with real address
-  mapsUrl: "https://maps.google.com", // placeholder — replace with real Google Maps link
-  openingHours: "Mon – Sat: 11:00 AM – 9:00 PM",
+  address: "United Plaza, Murree Road, Shamsabad, Rawalpindi",
+  mapsUrl: "https://www.google.com/maps/place/United+Plaza/@33.6375949,73.0699464,516m/data=!3m2!1e3!4b1!4m6!3m5!1s0x38df94d885b612c5:0x527fc7f7a843a9ea!8m2!3d33.6375949!4d73.0725267!16s%2Fg%2F12mkw70t5?entry=ttu&g_ep=EgoyMDI2MDkwOC4wIKXMDSoASAFQAw%3D%3D",
+  openingHours: "Mon – Sat: 9:00 AM – 8:00 PM",
   social: {
-    instagram: "https://www.instagram.com/shahkar.furnitures/",
-    facebook: "https://facebook.com/"
+    instagram: "https://www.instagram.com/shahkar.furnitures/"
   }
 };
 
