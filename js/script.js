@@ -331,12 +331,144 @@ const PRODUCT_CATALOG = [
     name: "Royal Carver Bedside Table",
     description: "A beautifully carved bedside table that blends practical storage with elegant craftsmanship."
   },
-  ...Array.from({ length: 23 }, (_, index) => ({
+  {
     category: "living-room",
-    image: `images/categories/sofa/sofa_${index + 1}.jpeg`,
-    name: `Sofa ${index + 1}`,
-    description: "Comfort-first sofa design that delivers premium lounging and a timeless look."
-  })),
+    image: "images/categories/sofa/sofa_1.jpeg",
+    name: "Royal Black & Gold Damask Sofa Set",
+    description: "A regal damask sofa set with black-and-gold detailing that delivers a luxurious, statement-making presence."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/sofa/sofa_2.jpeg",
+    name: "Royal Floral Cream Sofa Set",
+    description: "A graceful cream floral sofa set that blends classic elegance with a softly romantic finish."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/sofa/sofa_3.jpeg",
+    name: "Royal Ivory Floral Embroidered Sofa Set",
+    description: "Ivory upholstery and embroidered floral detailing create a refined, heirloom-inspired seating experience."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/sofa/sofa_4.jpeg",
+    name: "French Sage Velvet 2 Seater Sofa",
+    description: "A soft sage velvet sofa with a chic French-inspired look designed for relaxed luxury."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/sofa/sofa_5.jpeg",
+    name: "French Sage Classic Sofa Set 5 Seater",
+    description: "A classic five-seater sofa set in calming sage tones, combining comfort with tasteful tradition."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/sofa/sofa_6.jpeg",
+    name: "Royal Grey Velvet Gold Carved Sofa",
+    description: "A sophisticated grey velvet sofa elevated by elegant gold carving for a polished royal finish."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/sofa/sofa_7.jpeg",
+    name: "Modern Charcoal Grey L-Shaped Sectional with Ottoman",
+    description: "A contemporary charcoal sectional with ottoman seating designed for comfort and modern lounging."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/sofa/sofa_8.jpeg",
+    name: "Heavy Royal Black & Gold Damsk Sofa Set",
+    description: "An opulent black and gold sofa set with rich detailing that makes a bold luxury statement."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/sofa/sofa_9.jpeg",
+    name: "Royal Light Grey Gold Carved Sofa Set",
+    description: "Light grey upholstery and carved gold accents give this sofa set a fresh, elegant identity."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/sofa/sofa_10.jpeg",
+    name: "Royal White Tufted Sofa Set",
+    description: "A soft white tufted sofa set that brings freshness, volume and comfort to elegant interiors."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/sofa/sofa_11.jpeg",
+    name: "Modern L-Shape Tufted Corner Sofa with Storage Stools",
+    description: "A modular corner sofa with tufted detailing and integrated storage stools for practical luxury."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/sofa/sofa_12.jpeg",
+    name: "Royal Cream Floral Embroidered Sofa Set",
+    description: "Cream upholstery paired with floral embroidery creates a timeless, graceful focal point."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/sofa/sofa_13.jpeg",
+    name: "Royal Orange Chesterfield L-Shape Sofa",
+    description: "A bold orange Chesterfield-inspired sofa with sculptural depth and a distinctive vintage edge."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/sofa/sofa_14.jpeg",
+    name: "Classic Chesterfield Brown Leather Sofa Set",
+    description: "Rich brown leather and classic Chesterfield lines offer timeless sophistication and lasting comfort."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/sofa/sofa_15.jpeg",
+    name: "French Cream Floral Embroidered Sofa",
+    description: "A floral embroidered cream sofa with French-inspired styling and graceful, cozy elegance."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/sofa/sofa_16.jpeg",
+    name: "Modern Grey L-Shape Chaise Sectional Sofa",
+    description: "A sleek grey sectional with chaise comfort for contemporary lounging and layered design."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/sofa/sofa_17.jpeg",
+    name: "Royal Cream Channel Tufted Sofa with Gold Carving",
+    description: "Cream channel tufting and gold carved detailing make this sofa a luxurious statement piece."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/sofa/sofa_18.jpeg",
+    name: "Classic Taupe Tufted Sofa Set 5 Seater with Ottoman",
+    description: "A taupe tufted five-seater sofa set with matching ottoman for elegant comfort and gathering spaces."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/sofa/sofa_19.jpeg",
+    name: "Modern Wine Red Velvet Channel Sofa",
+    description: "A rich wine-red velvet sofa with channel detailing that adds warmth and dramatic character."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/sofa/sofa_20.jpeg",
+    name: "Classic Cream Sheesham Wood Carved Sofa Set",
+    description: "Cream upholstery and sheesham wood carving combine comfort and elegance in a timeless form."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/sofa/sofa_21.jpeg",
+    name: "Modern Grey L-Shape Corner Sofa",
+    description: "A streamlined grey corner sofa designed for contemporary interiors and relaxed everyday living."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/sofa/sofa_22.jpeg",
+    name: "French Blue Grey Floral Embroidered Sofa",
+    description: "Soft blue-grey tones and floral embroidery give this sofa a gentle, sophisticated vintage charm."
+  },
+  {
+    category: "living-room",
+    image: "images/categories/sofa/sofa_23.jpeg",
+    name: "Royal Ivory Embroidered Sofa Set",
+    description: "An ivory sofa set adorned with embroidery and graceful lines for an elevated classic statement."
+  },
   {
     category: "dining",
     image: "images/categories/takht_table/tab_1.jpeg",
