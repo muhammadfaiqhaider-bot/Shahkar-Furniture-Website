@@ -316,33 +316,39 @@ const PRODUCT_CATALOG = [
   {
     category: "dining",
     image: "images/categories/dining/dini_1.jpeg",
-    name: "Dining Table",
-    description: "An elegant dining table for modern family gatherings and formal hosting."
+    name: "Modern 4 Seater Round Dining Table set",
+    description: "A compact and stylish round dining set made for modern family gatherings and intimate meals."
   },
-  ...Array.from({ length: 1 }, () => ({
+  {
     category: "bedroom",
     image: "images/categories/dressing_table/dressi_1.jpeg",
-    name: "Dressing Table",
-    description: "A bedroom dressing table designed with elegance, storage and balanced detailing."
-  })),
-  ...Array.from({ length: 1 }, () => ({
+    name: "French Vintage White Can Dressing Table with Stool",
+    description: "A graceful vintage dressing table finished in white with a matching stool for refined charm."
+  },
+  {
     category: "living-room",
     image: "images/categories/side_table/tab_1.jpeg",
-    name: "Side Table",
-    description: "An accent side table designed to complement the living room with both style and utility."
-  })),
+    name: "Royal Carver Bedside Table",
+    description: "A beautifully carved bedside table that blends practical storage with elegant craftsmanship."
+  },
   ...Array.from({ length: 23 }, (_, index) => ({
     category: "living-room",
     image: `images/categories/sofa/sofa_${index + 1}.jpeg`,
     name: `Sofa ${index + 1}`,
     description: "Comfort-first sofa design that delivers premium lounging and a timeless look."
   })),
-  ...Array.from({ length: 2 }, (_, index) => ({
+  {
     category: "dining",
-    image: `images/categories/takht_table/tab_${index + 1}.jpeg`,
-    name: `Takht Table ${index + 1}`,
-    description: "Traditional seating furniture with a warm handcrafted character for dining and gathering spaces."
-  }))
+    image: "images/categories/takht_table/tab_1.jpeg",
+    name: "Traditional Hand-Carved Takht with Mother of Pearl",
+    description: "An heirloom-inspired takht enriched with hand carving and mother-of-pearl detailing."
+  },
+  {
+    category: "dining",
+    image: "images/categories/takht_table/tab_2.jpeg",
+    name: "Vintage Door Design Takht Table",
+    description: "A distinctive vintage door-inspired takht table with warm character and timeless appeal."
+  }
 ];
 
 function renderProductCards() {
